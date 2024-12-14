@@ -61,7 +61,7 @@ header {
 @media (max-width: 768px) {
   header {
     background-color: #fff;
-    min-height: 50vh;
+    min-height: 60vh;
     flex-direction: column;
     text-align: center;
   }
@@ -69,8 +69,6 @@ header {
   .navigation ul {
     flex-direction: column;
     align-items: center;
-    
-
   }
 
   .navigation ul li {
@@ -78,7 +76,6 @@ header {
     margin-top: 1rem;
     border-bottom: 1px solid black;
     margin-bottom: 1rem;
-
   }
 
   .hero-section {
@@ -88,8 +85,76 @@ header {
   }
 
   .hero-text {
-    padding: 10rem;
+    padding-top: 10rem;
+    padding: 2rem;
     max-width: 100%;
+  }
+  .hero-text = > h3 {
+    margin: 4rem 0;
+
+    font-size: 2rem;
+  }
+
+  .hero-text = > p {
+    margin: 5px 0;
+
+    font-size: 1rem;
+  }
+
+  .hero-section img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 520px) {
+  header {
+    background-color: #fff;
+    min-height: 60vh;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navigation ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navigation ul li {
+    margin: 5px 0;
+    margin-top: 1rem;
+    border-bottom: 1px solid black;
+    margin-bottom: 1rem;
+  }
+
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10rem;
+    scale: 0.7;
+
+    padding: 2rem;
+    max-width: 100%;
+  }
+
+  h3 {
+    font-size: 0.5rem;
+    margin: 20px 0;
+  }
+
+  .hero-text = > p {
+    margin: 5px 0;
+
+    font-size: 1rem;
   }
 
   .hero-section img {
@@ -157,10 +222,9 @@ button span {
   transform: scale(1.05);
 }
 
-
 .modalidades {
   display: grid;
-  animation: fadeIn 1.5s ease-in-out; 
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 .grid-container {
@@ -196,7 +260,6 @@ button span {
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-
 .modalidade:hover {
   transform: scale(1.03);
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
@@ -212,7 +275,6 @@ button span {
   transform: translateX(-50%) translateY(-100px);
 }
 
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -223,7 +285,6 @@ button span {
     transform: translateY(0);
   }
 }
-
 
 .localizacao {
   padding: 2rem;
@@ -267,13 +328,13 @@ button span {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5); 
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
   transition: background 0.3s ease;
 }
 
 .local-card:hover::before {
-  background: rgba(0, 0, 0, 0.3); 
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .card-content {
@@ -297,7 +358,6 @@ button span {
   font-size: 1rem;
   line-height: 1.5;
 }
-
 
 .instrutores-section {
   padding: 2rem;
@@ -340,7 +400,7 @@ button span {
   width: 100%;
   height: 40rem;
   object-fit: cover;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
   transform-origin: top;
 }
 
@@ -360,7 +420,7 @@ button span {
 }
 
 .instrutor-card:hover img {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 footer {
